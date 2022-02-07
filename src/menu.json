@@ -1,0 +1,100 @@
+{
+    "food": [
+        {
+            "id": "1",
+            "name": "Ali",
+            "price": "6000",
+            "description": "Pan de hamburguesa artesanal, con zapallo italiano apanado, hummus de garbanzo, rúcula, pimiento morrón y mayonesa de la casa.",
+            "type": "sandwiches",
+            "quantity": 0
+        },
+        {
+            "id": "2",
+            "name": "Oliver",
+            "price": "6000",
+            "description": "Pan de hamburguesa artesanal, con hamburguesa de soya, mayonesa de la casa, lechuga, cebolla caramelizada, pepinillos dill, un toque de mostaza y miel de palma.",
+            "type": "sandwiches",
+            "quantity": 0
+        },
+        {
+            "id": "3",
+            "name": "Manoly",
+            "price": "6000",
+            "description": "Pan de hamburguesa artesanal, con hamburguesa de poroto negro, mayonesa de la casa, lechuga, guacamole y nachos.",
+            "type": "sandwiches",
+            "quantity": 0
+        },
+        {
+            "id": "4",
+            "name": "Bunker",
+            "price": "7000",
+            "description": "Pan de hamburguesa artesanal, con hamburguesa de poroto rojo a la plancha, quinoa, mostaza de dijon, rodajas de tomate, lechuga, piña braseada y mayonesa de la casa.",
+            "type": "sandwiches",
+            "quantity": 0
+        },
+        {
+            "id": "5",
+            "name": "Limonada Simple",
+            "price": "1800",
+            "description": "Vaso de fresca limonada con limón natural.",
+            "type": "drinks",
+            "quantity": 0
+        },
+        {
+            "id": "6",
+            "name": "Vegan Revolution",
+            "price": "2600",
+            "description": "Vitamina de naranja, zanahoria, betarraga y semillas de chia.",
+            "type": "drinks",
+            "quantity": 0
+        },
+        {
+            "id": "7",
+            "name": "Bebidas en Lata",
+            "price": "1200",
+            "description": "Variedades.",
+            "type": "drinks",
+            "quantity": 0
+        },
+        {
+            "id": "8",
+            "name": "Smoothie",
+            "price": "2600",
+            "description": "Leche de soya con fruta y hielo.",
+            "type": "drinks",
+            "quantity": 0
+        },
+        {
+            "id": "9",
+            "name": "Papas bravas",
+            "price": "7000",
+            "description": "Papas fritas con un leve toque de salsa picante.",
+            "type": "otherPrep",
+            "quantity": 0
+        },
+        {
+            "id": "10",
+            "name": "Chorrillana Bunkeriana",
+            "price": "9000",
+            "description": "Papas fritas, cebolla caramelizada, champiñón salteado, tofu y seitán.",
+            "type": "otherPrep",
+            "quantity": 0
+        },
+        {
+            "id": "11",
+            "name": "Ensalada Bunker",
+            "price": "6000",
+            "description": "Cama de lechuga, brotes, berros, rúcula, palmitos, tomates y queso vegano acompañado de crutones al horno.",
+            "type": "otherPrep",
+            "quantity": 0
+        },
+        {
+            "id": "12",
+            "name": "Papas Fritas",
+            "price": "5500",
+            "description": "Porción para compartir de papas fritas.",
+            "type": "otherPrep",
+            "quantity": 0
+        }
+    ]
+}
