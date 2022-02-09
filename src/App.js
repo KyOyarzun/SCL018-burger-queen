@@ -28,7 +28,40 @@ function App() {
 
     })
   }
-  const totalValue = {addFood:addFood, addProduct, data}
+
+  const removeCart = (id) => {
+    console.log(removeCart)
+    changeAddFood({
+      ...addFood,
+      cart: addFood.cart.filter((item) => item.id !== id)
+    })
+  }
+
+  const increase = (id) => {
+    changeAddFood({
+      ...addFood,
+      cart: addFood.cart.map((item) => item.id === id
+      ?
+      {...item, count:item.count + 1}
+      :
+      item
+    )
+  })
+  }
+
+  const decrease = (id) => {
+    changeAddFood({
+      ...addFood,
+      cart: addFood.cart.map((item) => item.id === id
+      ?
+      {...item, count:item.count > 1 ? item.count -1 : 1}
+      :
+      item
+    )
+  })
+  }
+
+  const totalValue = {addFood:addFood, addProduct, data, removeCart, increase, decrease}
 
   return (
   <DataContext.Provider value={totalValue}>

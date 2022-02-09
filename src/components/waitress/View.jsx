@@ -1,20 +1,35 @@
 import Cart from "./Cart";
 import Order from "./Order";
+/* import "../../style.css";  */
 import styled from "styled-components";
 
 
 const View = () => {
     return (
         <>
+            <WaitressView>
             <Order/> 
+            <CartView>
             <Cart/> 
+            </CartView>
+            </WaitressView>
         </>
     )
 }
 
 export default View;
 
-/* const Contenedor = styled.div`
+const WaitressView = styled.section`
+    display: flex;
+    justify-content: space-around;
+`;
+
+const CartView = styled.section`
+display: flex;
+flex-direction: column;
+`;
+
+/* const Contenedor = styled.div
      
 display: flex;
 flex-flow: row wrap;
@@ -24,7 +39,7 @@ margin: auto;
 padding-top: 20px;
 background:  #cfcdcb;
 
-      `;
+     ;
 
       const Menu = styled.main`
       box-sizing: border-box;

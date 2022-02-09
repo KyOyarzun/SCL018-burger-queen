@@ -1,7 +1,7 @@
 function KitchenView () {
     return (
         <div>
-            <p>Pedidos</p>     
+            <p>Pedidos en espera</p>     
         </div>
     )
 }
