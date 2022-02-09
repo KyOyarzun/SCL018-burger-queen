@@ -61,7 +61,14 @@ function App() {
   })
   }
 
-  const totalValue = {addFood:addFood, addProduct, data, removeCart, increase, decrease}
+  const clearCart = () => {
+    changeAddFood({
+      ...addFood, 
+      cart: []
+    })
+  }
+
+  const totalValue = {addFood:addFood, addProduct, data, removeCart, increase, decrease, clearCart}
 
   return (
   <DataContext.Provider value={totalValue}>

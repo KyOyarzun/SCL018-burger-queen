@@ -30,23 +30,21 @@ const Cart = () => {
  // why addData
     const addData = async (e) => {
         e.preventDefault();
-        try {
-          const docRef = await addDoc(collection(db, 'orderToPrepare'), {
-            mesa: table,
-            total: totalCart,
-            time: exactDate(),
-            order: cartItem,
-            estado: 'Preparing',
-    
-          });
-        } catch (e) {
-          console.error();
-        }
-        changeTable('');
-        context.removeAll();
-      };
-
-
+      try {
+        const docRef = await addDoc(collection(db, 'orderToPrepare'), {
+          mesa: table,
+          total: totalCart,
+          time: exactDate(),
+          order: cartItem,
+          estado: 'Preparing',
+        });
+      console.log('Document written with ID: ', docRef.id);
+      } catch (e) {
+        console.error('Error adding document: ', e);
+      }
+      changeTable('');
+      context.clearCart();
+    };
 
 
       //Agregado hoy
@@ -69,9 +67,9 @@ const Cart = () => {
             <div key={index}>
                 <span>{product.count} {product.name}</span>
                 <p>${(product.price * product.count)}</p>
-                <button onClick={() => context.increase(product.id)}>+</button>
-                <button onClick={() => context.removeCart(product.id)}>Eliminar</button> 
-                <button onClick={() => context.decrease(product.id)}>-</button> 
+                <li onClick={() => context.increase(product.id)}>+</li>
+                <li onClick={() => context.removeCart(product.id)}>Eliminar</li> 
+                <li onClick={() => context.decrease(product.id)}>-</li> 
             </div>
         ))}
             <div>
@@ -99,3 +97,13 @@ export default Cart;
 const Form = styled.form`
 height: 60vh;
 `;
+
+
+/*background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;*/
