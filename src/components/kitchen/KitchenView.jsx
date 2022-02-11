@@ -1,9 +1,12 @@
-function KitchenView () {
+import KitchenOrder from "./KitchenOrder";
+
+
+const KitchenView = () => {
     return (
-        <div>
-            <p>Pedidos en espera</p>     
-        </div>
+        <>
+            <KitchenOrder/> 
+        </>
     )
-}
+};
 
 export default KitchenView;
