@@ -6,6 +6,7 @@ import KitchenView from "./components/kitchen/KitchenView.jsx";
 import menuJson from "./menu.json"; 
 import {createContext, useState} from "react";
 import View from "./components/waitress/View.jsx";
+//import "@material-tailwind/react/tailwind.css"; // importa tailwind global supuestamente
 
 export const DataContext = createContext();
 

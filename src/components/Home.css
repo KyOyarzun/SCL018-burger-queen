@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+/*     font-family: DancingScript;
+    src: url(./resources/DancingScript-VariableFont_wght.ttf); */
+    font-family: Raleway;
+    src: url(./resources/Raleway-VariableFont_wght.ttf);
+}
+
+.btn {
+    border: solid 0.2rem white;
+    background-color: #01a3a6;
+    margin-top: 5rem;
+    padding: 2rem;
+
+}
+
+.home-buttons-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand{
+    font-family: DancingScript;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.navbar{
+    background-color: #01a3a6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    display: flex;
+    padding-top: 1rem;
+}
+
+.first-page{
+    height: 100vh;
+}

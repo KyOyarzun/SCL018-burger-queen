@@ -10,6 +10,7 @@ const Order = () => {
     return (
     <>
     <div>
+        <section>
       <button onClick={() => cambiarEstadoSesion(newData)}>Sándwiches</button>
       <button onClick={() => cambiarEstadoSesion(newDrink)}>Bebestibles</button>
       <button onClick={() => cambiarEstadoSesion(newPreps)}>Otras preparaciones</button>
@@ -23,6 +24,7 @@ const Order = () => {
                 </div>
             </div>
         ))}  
+        </section>
     </div> 
     </>
 )
